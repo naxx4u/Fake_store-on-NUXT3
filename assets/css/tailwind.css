@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-gray-50 ;
+
+}
+
+@layer components {
+    .btn {
+        @apply flex justify-center items-center py-1 px-2 border border-gray-600 rounded-md bg-green-400/70 uppercase text-gray-600 font-semibold hover:bg-green-500 hover:text-white active:scale-105 active:border-gray-500 active:shadow-md
+    }
+}
+
+@layer base {
+    ::-webkit-scrollbar{
+      width: 10px;
+      background:  lightgreen;
+    }
+    ::-webkit-scrollbar-thumb{
+      background: #fff;
+      border-radius: 5px;
+    }
+  }
